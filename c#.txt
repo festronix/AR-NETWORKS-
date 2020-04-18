@@ -1,0 +1,96 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+
+
+public class menu : MonoBehaviour
+{
+
+    public GameObject PeerToPeerNetworkText;
+    public GameObject SNMPConceptText;
+    public GameObject BasicModelOfFTPText;
+    public GameObject BISDNText;
+
+    void Start()
+    {
+        PeerToPeerNetworkText.SetActive(false);
+        SNMPConceptText.SetActive(false);
+        BasicModelOfFTPText.SetActive(false);
+        BISDNText.SetActive(false);
+
+    }
+    public void PeerToPeerNetwork()
+    {
+        PeerToPeerNetworkText.SetActive(true);
+        SNMPConceptText.SetActive(false);
+        BasicModelOfFTPText.SetActive(false);
+        BISDNText.SetActive(false);
+
+
+    }
+    public void SNMPConcept()
+    {
+        PeerToPeerNetworkText.SetActive(false);
+        SNMPConceptText.SetActive(true);
+        BasicModelOfFTPText.SetActive(false);
+        BISDNText.SetActive(false);
+    }
+    public void BasicModelOfFTP()
+    {
+        PeerToPeerNetworkText.SetActive(false);
+        SNMPConceptText.SetActive(false);
+        BasicModelOfFTPText.SetActive(true);
+        BISDNText.SetActive(false);
+
+    }
+    public void BISDN()
+    {
+        PeerToPeerNetworkText.SetActive(false);
+        SNMPConceptText.SetActive(false);
+        BasicModelOfFTPText.SetActive(false);
+        BISDNText.SetActive(true);
+
+
+
+    }
+    public void Info1()
+    {
+        SceneManager.LoadScene("first");
+    }
+    public void Info2()
+    {
+        SceneManager.LoadScene("free");
+    }
+    public void info3()
+    {
+        SceneManager.LoadScene("info");
+    }
+    public void info4()
+    {
+        SceneManager.LoadScene("hiii");
+    }
+    public void Info5()
+    {
+        SceneManager.LoadScene("jack");
+    }
+    public void Info6()
+    {
+        SceneManager.LoadScene("kite");
+    }
+    public void info7()
+    {
+        SceneManager.LoadScene("lemon");
+    }
+    public void info8()
+    {
+        SceneManager.LoadScene("money");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+   
+}
